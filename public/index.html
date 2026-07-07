@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Fieldstone & Co. — Shop</title>
-<link rel="stylesheet" href="/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> CodeAlpha-store</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="container">
-    <a href="/index.html" class="brand">Fieldstone<span class="dot">&</span>Co.</a>
-    <div class="header-search">
-      <form id="header-search-form">
-        <input type="text" id="header-search-input" placeholder="Search products..." />
-        <button type="submit">Search</button>
-      </form>
+    <header class="site-header">
+        <div class="container">
+            <a href="/index.html" class="brand">Fieldstone<span class="dot">&</span>Co.</a>
+            <div class="header-search">
+                <form id="header-search-form">
+                    <input type="text" id="header-search-input" placeholder="Search products..." />
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <nav class="nav-actions">
+                <a href="/orders.html" id="orders-link" class="hidden">My Orders</a>
+                <a href="/cart.html">Cart <span id="cart-count" class="cart-count hidden">0</span></a>
+                <a href="/login.html" id="auth-link">Log in</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">New arrivals weekly</span>
+            <h1>Everyday goods, chosen well</h1>
+            <p>Browse our full catalog of apparel, electronics, and home essentials — all in stock and ready to ship.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="filters-bar" id="filters-bar">
+            <button class="chip active" data-category="">All</button>
+            <!-- category chips inserted here -->
+        </div>
+
+        <div id="product-grid" class="product-grid">
+            <p class="loading-text">Loading products…</p>
+        </div>
     </div>
-    <nav class="nav-actions">
-      <a href="/orders.html" id="orders-link" class="hidden">My Orders</a>
-      <a href="/cart.html">Cart <span id="cart-count" class="cart-count hidden">0</span></a>
-      <a href="/login.html" id="auth-link">Log in</a>
-    </nav>
-  </div>
-</header>
 
-<section class="page-header">
-  <div class="container">
-    <span class="eyebrow">New arrivals weekly</span>
-    <h1>Everyday goods, chosen well</h1>
-    <p>Browse our full catalog of apparel, electronics, and home essentials — all in stock and ready to ship.</p>
-  </div>
-</section>
+    <footer class="site-footer">
+        <div class="container">CodeAlpha- store built for learning purposes.</div>
+    </footer>
 
-<div class="container">
-  <div class="filters-bar" id="filters-bar">
-    <button class="chip active" data-category="">All</button>
-    <!-- category chips inserted here -->
-  </div>
-
-  <div id="product-grid" class="product-grid">
-    <p class="loading-text">Loading products…</p>
-  </div>
-</div>
-
-<footer class="site-footer">
-  <div class="container">Fieldstone & Co. — a demo store built for learning purposes.</div>
-</footer>
-
-<script src="/js/api.js"></script>
-<script src="/js/products-list.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/products-list.js"></script>
 </body>
+
 </html>
